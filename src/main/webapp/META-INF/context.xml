@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Context>
+    <Resource name="ldap/LdapResource" auth="Container"
+              type="javax.naming.ldap.LdapContext"
+              factory="com.ldapAsResource.example.factory.LdapContextFactory"
+              singleton="false"
+              java.naming.factory.initial="com.sun.jndi.ldap.LdapCtxFactory"
+              java.naming.provider.url="ldap://127.0.0.1:389"
+              java.naming.security.authentication="simple"
+              java.naming.security.principal="cn=admin,dc=qafe,dc=com"
+              java.naming.security.credentials="qafe" />
+</Context>
